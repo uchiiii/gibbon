@@ -1,4 +1,4 @@
-# Interpreter written with GOlang.
+# gibbon: Interpreted language written with Golang.
 
 ### How to use
 ```
