@@ -4,8 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"io"
-	"github.com/uchiiii/Interpreter-with-go/token"
-	"github.com/uchiiii/Interpreter-with-go/lexer"
+	"github.com/uchiiii/gibbon/token"
+	"github.com/uchiiii/gibbon/lexer"
 )
 
 const PROMPT = ">>"

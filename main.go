@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 	"os/user"
-	"github.com/uchiiii/Interpreter-with-go/repl"
+	"github.com/uchiiii/gibbon/repl"
 )
 
 func main(){
@@ -12,7 +12,7 @@ func main(){
 	if err != nil{
 		panic(err)
 	}
-	fmt.Printf("Hello %s! This is the Monkey&Ryosuke Programming language!\n", user.Username)
+	fmt.Printf("Hello %s! This is gibbon Programming language!\n", user.Username)
 	fmt.Printf("Feel free to type in commands\n")
 	repl.Start(os.Stdin, os.Stdout)
 }

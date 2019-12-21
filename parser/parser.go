@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"github.com/uchiiii/Interpreter-with-go/token"
-	"github.com/uchiiii/Interpreter-with-go/ast"
-	"github.com/uchiiii/Interpreter-with-go/lexer"
+	"github.com/uchiiii/gibbon/token"
+	"github.com/uchiiii/gibbon/ast"
+	"github.com/uchiiii/gibbin/lexer"
 )
 
 type Parser struct{
