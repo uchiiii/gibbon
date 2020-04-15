@@ -1,5 +1,6 @@
 # gibbon: Interpreted language written with Golang.
 
+![](https://github.com/uchiiii/gibbon/workflows/Test/badge.svg)
 
 ### Install
 ```
