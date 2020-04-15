@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/uchiiii/gibbon/repl"
 	"os"
 	"os/user"
-	"github.com/uchiiii/gibbon/repl"
 )
 
-func main(){
+func main() {
 	user, err := user.Current()
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 	fmt.Printf("Hello %s! This is gibbon Programming language!\n", user.Username)

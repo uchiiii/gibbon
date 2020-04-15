@@ -1,11 +1,11 @@
 package lexer
 
 import (
-	"testing"
 	"github.com/uchiiii/gibbon/token"
+	"testing"
 )
 
-func TestNextToken(t *testing.T){
+func TestNextToken(t *testing.T) {
 	input := `let five = 5;
 	let ten = 10;
 
@@ -27,8 +27,8 @@ func TestNextToken(t *testing.T){
 	10 != 9;
 	`
 
-	tests := []struct{
-		expectedType token.TokenType
+	tests := []struct {
+		expectedType    token.TokenType
 		expectedLiteral string
 	}{
 		{token.LET, "let"},
@@ -109,9 +109,9 @@ func TestNextToken(t *testing.T){
 
 	l := New(input)
 
-	for i,tt := range tests {
+	for i, tt := range tests {
 		tok := l.NextToken()
-		
+
 		if tok.Type != tt.expectedType {
 			t.Fatalf("tests[%d] - tokentype wrong. expected=%q, got=%q", i, tt.expectedType, tok.Type)
 		}
